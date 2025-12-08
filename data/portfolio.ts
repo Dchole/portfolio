@@ -1,11 +1,11 @@
 import { Project, Experience, Skill, SocialLink } from "@/types";
 
 export const personalInfo = {
-  name: "Alex Morgan",
+  name: "Derek Oware",
   title: "Senior Full-Stack Developer",
   tagline: "Building elegant solutions with modern web technologies",
-  email: "alex.morgan@example.com",
-  location: "San Francisco, CA",
+  email: "derekoware47@gmail.com",
+  location: "Takoradi, Ghana",
   bio: "I'm a senior full-stack developer with 8+ years of experience specializing in React, Next.js, and Node.js. I'm passionate about creating performant, accessible web applications that solve real-world problems. My focus is on frontend architecture, but I bring full-stack expertise to every project.",
   avatar: "/avatar.jpg" // Add your image to public folder
 };

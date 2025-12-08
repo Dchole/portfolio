@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Morgan | Senior Full-Stack Developer",
+  title: "Derek Oware | Senior Full-Stack Developer",
   description:
     "Senior Full-Stack Developer specializing in React, Next.js, and Node.js. Building elegant solutions with modern web technologies.",
   keywords: [
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     "TypeScript",
     "Web Development"
   ],
-  authors: [{ name: "Alex Morgan" }],
+  authors: [{ name: "Derek Oware" }],
   openGraph: {
-    title: "Alex Morgan | Senior Full-Stack Developer",
+    title: "Derek Oware | Senior Full-Stack Developer",
     description:
       "Senior Full-Stack Developer specializing in React, Next.js, and Node.js",
     type: "website"

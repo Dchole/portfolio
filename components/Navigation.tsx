@@ -45,7 +45,7 @@ export function Navigation() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            AM
+            DO
           </a>
 
           {/* Desktop Navigation */}
