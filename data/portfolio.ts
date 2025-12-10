@@ -54,18 +54,20 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Adcraft - Ad generator",
+    title: "Adcraft - Video Ad Generator",
     description:
-      "A full-featured e-commerce platform with real-time inventory management and payment processing.",
+      "AI-powered video ad generator that transforms your e-commerce product pages into professional video ads in under a minute.",
     longDescription:
-      "Built a scalable e-commerce solution handling 10k+ daily users. Implemented advanced filtering, real-time inventory updates, and integrated Stripe for payment processing. Achieved 95+ Lighthouse score through aggressive optimization.",
+      "Built an AI-powered SaaS platform that automates video ad creation for social media sellers. The system scrapes product images and videos from e-commerce URLs using Puppeteer, generates AI-powered scripts, and creates voice-overs with Eleven Labs. Features include customizable media selection, automated video rendering with FFmpeg, and Paystack payment integration. Generates professional ads in 30-60 seconds for $0-30 depending on the number of ads generated.",
     technologies: [
       "Next.js",
       "TypeScript",
-      "PostgreSQL",
-      "Prisma",
-      "Stripe",
-      "Redis"
+      "Nest.js",
+      "MongoDB",
+      "Puppeteer",
+      "FFmpeg",
+      "Eleven Labs API",
+      "Paystack"
     ],
     imageUrl: "/projects/Adcraft.webp",
     demoUrl: "https://adcraft.cc",
