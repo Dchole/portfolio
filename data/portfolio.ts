@@ -96,17 +96,18 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "Handymen - Book Home Services",
+    title: "Handymen - Smart Service Booking",
     description:
-      "A comprehensive analytics dashboard with interactive charts and real-time data visualization.",
+      "Intelligent service booking platform with automated provider matching and smart scheduling algorithms.",
     longDescription:
-      "Created a data visualization platform processing millions of data points. Features customizable dashboards, exportable reports, and real-time data streams. Implemented efficient data aggregation and caching strategies for optimal performance.",
+      "Developed a sophisticated scheduling system for home service bookings with intelligent provider-to-customer matching. Implemented time-slot conflict resolution algorithms, automated availability checking, and smart painter prioritization based on multiple factors (availability, workload distribution, proximity). Built RESTful APIs for availability management and booking requests with real-time slot recommendations when exact matches aren't available. Features include provider dashboard for availability management, customer booking interface, and automatic assignment logic with fallback to closest available slots.",
     technologies: [
       "Next.js",
-      "Tailwind CSS",
+      "TypeScript",
       "Nest.js",
       "Prisma",
-      "PostgreSQL"
+      "PostgreSQL",
+      "React"
     ],
     imageUrl: "/projects/Handymen.webp",
     demoUrl: "https://handymen-nu.vercel.app/",
