@@ -69,12 +69,11 @@ export const projects: Project[] = [
     ],
     imageUrl: "/projects/Adcraft.webp",
     demoUrl: "https://adcraft.cc",
-    githubUrl: "https://github.com/yourusername/ecommerce",
     featured: true
   },
   {
     id: "2",
-    title: "Task Management SaaS",
+    title: "Brilla - AI Study Assistant",
     description:
       "A collaborative task management application with real-time updates and team workspaces.",
     longDescription:
@@ -89,23 +88,21 @@ export const projects: Project[] = [
     ],
     imageUrl: "/projects/Brilla.webp",
     demoUrl: "https://brilla.app",
-    githubUrl: "https://github.com/yourusername/task-manager",
     featured: true
   },
   {
     id: "3",
-    title: "Analytics Dashboard",
+    title: "Handymen - Book Home Services",
     description:
       "A comprehensive analytics dashboard with interactive charts and real-time data visualization.",
     longDescription:
       "Created a data visualization platform processing millions of data points. Features customizable dashboards, exportable reports, and real-time data streams. Implemented efficient data aggregation and caching strategies for optimal performance.",
     technologies: [
-      "React",
-      "D3.js",
-      "GraphQL",
-      "PostgreSQL",
-      "Docker",
-      "Kubernetes"
+      "Next.js",
+      "Tailwind CSS",
+      "Nest.js",
+      "Prisma",
+      "PostgreSQL"
     ],
     imageUrl: "/projects/Handymen.webp",
     demoUrl: "https://handymen-nu.vercel.app/",
