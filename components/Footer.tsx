@@ -1,5 +1,3 @@
-"use client";
-
 import { personalInfo, socialLinks } from "@/data/portfolio";
 import { Github, Linkedin, Twitter } from "lucide-react";
 

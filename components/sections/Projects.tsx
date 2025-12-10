@@ -1,5 +1,4 @@
-"use client";
-
+import Image from "next/image";
 import { Section, SectionTitle } from "@/components/Section";
 import { FadeIn } from "@/components/AnimationWrapper";
 import { projects } from "@/data/portfolio";
@@ -17,14 +16,13 @@ export function Projects() {
                 <div className="grid lg:grid-cols-2">
                   {/* Image */}
                   <div className="relative aspect-video bg-neutral-100 dark:bg-neutral-800 lg:aspect-auto">
-                    <div className="flex h-full items-center justify-center p-8 text-center text-neutral-400">
-                      <div>
-                        <p className="text-sm">Add project screenshot to</p>
-                        <p className="mt-1 text-xs font-mono">
-                          {project.imageUrl}
-                        </p>
-                      </div>
-                    </div>
+                    <Image
+                      src={project.imageUrl}
+                      alt={project.title}
+                      fill
+                      className="contain object-center transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
                   </div>
 
                   {/* Content */}

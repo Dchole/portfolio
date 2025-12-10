@@ -1,5 +1,3 @@
-"use client";
-
 import { Section, SectionTitle } from "@/components/Section";
 import { FadeIn, SlideIn } from "@/components/AnimationWrapper";
 import { skills } from "@/data/portfolio";
