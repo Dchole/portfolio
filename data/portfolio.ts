@@ -54,7 +54,7 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     id: "1",
-    title: "E-Commerce Platform",
+    title: "Adcraft - Ad generator",
     description:
       "A full-featured e-commerce platform with real-time inventory management and payment processing.",
     longDescription:
@@ -67,7 +67,7 @@ export const projects: Project[] = [
       "Stripe",
       "Redis"
     ],
-    imageUrl: "/projects/Adcraft.png",
+    imageUrl: "/projects/Adcraft.webp",
     demoUrl: "https://adcraft.cc",
     githubUrl: "https://github.com/yourusername/ecommerce",
     featured: true
@@ -87,8 +87,8 @@ export const projects: Project[] = [
       "AWS S3",
       "Tailwind CSS"
     ],
-    imageUrl: "/projects/Brilla.png",
-    demoUrl: "https://learn.brilla.app",
+    imageUrl: "/projects/Brilla.webp",
+    demoUrl: "https://brilla.app",
     githubUrl: "https://github.com/yourusername/task-manager",
     featured: true
   },
@@ -107,7 +107,7 @@ export const projects: Project[] = [
       "Docker",
       "Kubernetes"
     ],
-    imageUrl: "/projects/Handymen.png",
+    imageUrl: "/projects/Handymen.webp",
     demoUrl: "https://handymen-nu.vercel.app/",
     githubUrl: "https://github.com/Dchole/handymen",
     featured: true

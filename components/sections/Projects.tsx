@@ -20,7 +20,7 @@ export function Projects() {
                       src={project.imageUrl}
                       alt={project.title}
                       fill
-                      className="contain object-center transition-transform duration-300 group-hover:scale-105"
+                      className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
