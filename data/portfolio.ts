@@ -77,16 +77,18 @@ export const projects: Project[] = [
     id: "2",
     title: "Brilla - AI Study Assistant",
     description:
-      "A collaborative task management application with real-time updates and team workspaces.",
+      "AI-powered study platform that transforms study materials into interactive quizzes, flashcards, and summaries for efficient exam preparation.",
     longDescription:
-      "Developed a real-time collaboration tool using WebSockets. Features include drag-and-drop task boards, team workspaces, file attachments, and activity tracking. Supports 1000+ concurrent users with optimistic UI updates.",
+      "Built an intelligent study platform for college students that processes PDF, DOCX, and TXT documents with advanced document parsing (pdf-parse, mammoth, docx). Features include interactive document preview with text highlighting, OpenAI-powered Q&A on study material, auto-generated quizzes and flashcards for revision, and AI-generated summaries. Integrated Supabase for authentication and storage, AWS S3 for document management, and Resend for email notifications. Instant AI responses provide seamless learning experience.",
     technologies: [
-      "React",
-      "Node.js",
-      "Socket.io",
-      "MongoDB",
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "OpenAI",
       "AWS S3",
-      "Tailwind CSS"
+      "PDF-Parse",
+      "Mammoth",
+      "Resend"
     ],
     imageUrl: "/projects/Brilla.webp",
     demoUrl: "https://brilla.app",
