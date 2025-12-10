@@ -6,7 +6,10 @@ import { personalInfo } from "@/data/portfolio";
 
 export function About() {
   return (
-    <Section id="about" className="bg-neutral-50 dark:bg-neutral-900/30">
+    <Section
+      id="about"
+      className="bg-neutral-50 dark:bg-neutral-900/30 -z-10 relative"
+    >
       <FadeIn>
         <SectionTitle>About Me</SectionTitle>
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">

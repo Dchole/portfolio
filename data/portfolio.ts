@@ -67,8 +67,8 @@ export const projects: Project[] = [
       "Stripe",
       "Redis"
     ],
-    imageUrl: "/projects/ecommerce.jpg",
-    demoUrl: "https://example.com",
+    imageUrl: "/projects/Adcraft.png",
+    demoUrl: "https://adcraft.cc",
     githubUrl: "https://github.com/yourusername/ecommerce",
     featured: true
   },
@@ -87,8 +87,8 @@ export const projects: Project[] = [
       "AWS S3",
       "Tailwind CSS"
     ],
-    imageUrl: "/projects/task-manager.jpg",
-    demoUrl: "https://example.com",
+    imageUrl: "/projects/Brilla.png",
+    demoUrl: "https://learn.brilla.app",
     githubUrl: "https://github.com/yourusername/task-manager",
     featured: true
   },
@@ -107,9 +107,9 @@ export const projects: Project[] = [
       "Docker",
       "Kubernetes"
     ],
-    imageUrl: "/projects/analytics.jpg",
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/analytics",
+    imageUrl: "/projects/Handymen.png",
+    demoUrl: "https://handymen-nu.vercel.app/",
+    githubUrl: "https://github.com/Dchole/handymen",
     featured: true
   }
 ];
