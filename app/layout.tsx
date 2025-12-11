@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import DotGrid from "@/components/DotGrid";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +24,9 @@ export const metadata: Metadata = {
     "Web Development"
   ],
   authors: [{ name: "Derek Oware" }],
+  icons: {
+    icon: "/favicon.png"
+  },
   openGraph: {
     title: "Derek Oware | Senior Full-Stack Developer",
     description:
