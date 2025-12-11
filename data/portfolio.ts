@@ -119,55 +119,85 @@ export const projects: Project[] = [
 export const experience: Experience[] = [
   {
     id: "1",
-    company: "TechCorp Inc.",
+    company: "Welite",
     position: "Senior Full-Stack Developer",
-    location: "San Francisco, CA",
-    startDate: "2021-03",
+    location: "Remote",
+    startDate: "2021-12",
     endDate: null,
     description: [
-      "Led frontend architecture redesign reducing load time by 60%",
-      "Mentored team of 4 junior developers in React best practices",
-      "Implemented comprehensive testing strategy increasing coverage to 85%",
-      "Collaborated with product team to define technical requirements"
+      "Built 10+ client projects from scratch across e-commerce, SaaS, dashboards, and tracking systems under NDA",
+      "Served as technical lead for complex problem-solving across projects, performing code reviews and architecture decisions",
+      "Led major optimization initiatives on legacy codebases, reducing load times and improving performance metrics",
+      "Migrated large JavaScript codebases to TypeScript, improving code quality and maintainability",
+      "Mentored new developers during onboarding and collaborated on completing critical project deliverables"
     ],
     technologies: [
-      "React",
       "Next.js",
       "TypeScript",
+      "React",
+      "Nest.js",
       "Node.js",
+      "Redux",
+      "Zustand",
       "PostgreSQL",
-      "AWS"
+      "MongoDB",
+      "AWS",
+      "Socket.io",
+      "tRPC",
+      "IndexedDB"
     ]
   },
   {
     id: "2",
-    company: "StartupXYZ",
-    position: "Full-Stack Developer",
-    location: "Remote",
-    startDate: "2019-01",
-    endDate: "2021-02",
+    company: "Dishplug",
+    position: "Co-Founder & COO",
+    location: "Ghana",
+    startDate: "2022-10",
+    endDate: "2024-04",
     description: [
-      "Built customer-facing web application from ground up",
-      "Designed and implemented RESTful APIs serving 50k+ daily requests",
-      "Optimized database queries reducing response time by 70%",
-      "Participated in agile ceremonies and sprint planning"
+      "Co-founded food delivery platform connecting campus vendors with students across multiple universities",
+      "Built complete technical infrastructure including customer web app, vendor admin panel, and rider mobile app",
+      "Implemented real-time order tracking system with GraphQL API, Firebase, and Socket.io for live updates",
+      "Integrated Google Maps API for location services, route optimization, and delivery tracking",
+      "Managed operations including vendor onboarding, order fulfillment, and delivery coordination"
     ],
-    technologies: ["React", "Express", "MongoDB", "Redis", "Docker"]
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "GraphQL",
+      "Apollo Server",
+      "React Native",
+      "Firebase",
+      "MongoDB",
+      "Socket.io",
+      "Google Maps API",
+      "Paystack"
+    ]
   },
   {
     id: "3",
-    company: "Digital Agency Co.",
-    position: "Frontend Developer",
-    location: "New York, NY",
-    startDate: "2017-06",
-    endDate: "2018-12",
+    company: "Freelance Developer",
+    position: "Full-Stack Developer",
+    location: "Remote",
+    startDate: "2020-11",
+    endDate: "2024-07",
     description: [
-      "Developed responsive web applications for multiple clients",
-      "Implemented pixel-perfect designs from Figma mockups",
-      "Improved website performance achieving 90+ Lighthouse scores",
-      "Collaborated with designers and backend developers"
+      "Fixed OAuth authentication bug for fintech client using banking API with JWT integration",
+      "Automated digital store sales with Steam login automation and 2FA handling via Google Email API",
+      "Developed animated landing page with SEO and accessibility optimization achieving 95+ Lighthouse score",
+      "Built Facebook automation bot for real-time post engagement with auto-like and contextual commenting",
+      "Created Chrome extension with engagement tracking system using PostgreSQL and IndexedDB for dual-storage"
     ],
-    technologies: ["React", "Vue.js", "SASS", "Webpack", "REST APIs"]
+    technologies: [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Chrome Extensions API",
+      "OAuth",
+      "Google APIs",
+      "Automation"
+    ]
   }
 ];
 
