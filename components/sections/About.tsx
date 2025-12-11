@@ -1,6 +1,7 @@
 import { Section, SectionTitle } from "@/components/Section";
 import { FadeIn } from "@/components/AnimationWrapper";
 import { personalInfo } from "@/data/portfolio";
+import Image from "next/image";
 
 export function About() {
   return (
@@ -54,14 +55,15 @@ export function About() {
           </div>
           <div className="relative">
             <div className="aspect-square overflow-hidden rounded-2xl bg-neutral-200 dark:bg-neutral-800">
-              {/* Placeholder for profile image */}
-              <div className="flex h-full items-center justify-center text-neutral-400">
-                <p className="text-center text-sm">
-                  Add your photo to
-                  <br />
-                  /public/avatar.jpg
-                </p>
-              </div>
+              <Image
+                src="/avatar.webp"
+                alt={personalInfo.name}
+                fill
+                className="object-cover rounded-2xl"
+                priority
+                placeholder="blur"
+                blurDataURL="/avatar-low-quality.webp"
+              />
             </div>
           </div>
         </div>
