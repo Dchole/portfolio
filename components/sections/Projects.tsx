@@ -49,13 +49,13 @@ export function Projects() {
                     </div>
 
                     {/* Links */}
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap gap-4">
                       {project.demoUrl && (
                         <a
                           href={project.demoUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:text-neutral-600 dark:hover:text-neutral-400"
+                          className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-800 dark:bg-white dark:text-black dark:hover:bg-neutral-200"
                         >
                           <ExternalLink className="h-4 w-4" />
                           Live Demo
@@ -66,7 +66,7 @@ export function Projects() {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:text-neutral-600 dark:hover:text-neutral-400"
+                          className="inline-flex items-center gap-2 rounded-full border border-neutral-200 px-6 py-3 text-sm font-medium transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-800"
                         >
                           <Github className="h-4 w-4" />
                           Source Code
