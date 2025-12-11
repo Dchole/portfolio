@@ -1,5 +1,9 @@
 "use server";
 
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.API_RESEND_KEY);
+
 export async function submitContactForm(formData: FormData) {
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
@@ -17,22 +21,24 @@ export async function submitContactForm(formData: FormData) {
   }
 
   try {
-    // TODO: Integrate with your email service (Resend, SendGrid, etc.)
-    // For now, we'll just log it
-    console.log("Contact form submission:", { name, email, message });
+    await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
+      to: "derekoware47@gmail.com",
+      replyTo: email,
+      subject: `Portfolio Contact: ${name}`,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>From:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, "<br>")}</p>
+      `
+    });
 
-    // Example with Resend (uncomment and configure):
-    // const { Resend } = require('resend');
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    //
-    // await resend.emails.send({
-    //   from: 'onboarding@resend.dev',
-    //   to: 'derekoware47@gmail.com',
-    //   subject: `Portfolio Contact: ${name}`,
-    //   html: `<p><strong>From:</strong> ${name} (${email})</p><p><strong>Message:</strong></p><p>${message}</p>`
-    // });
-
-    return { success: true, message: "Message sent successfully" };
+    return {
+      success: true,
+      message: "Message sent successfully! I'll get back to you soon."
+    };
   } catch (error) {
     console.error("Contact form error:", error);
     return {
