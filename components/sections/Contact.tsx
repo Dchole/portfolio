@@ -4,7 +4,7 @@ import { useActionState, useEffect } from "react";
 import { Section, SectionTitle } from "@/components/Section";
 import { FadeIn } from "@/components/AnimationWrapper";
 import { personalInfo, socialLinks } from "@/data/portfolio";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Loader2Icon, Twitter } from "lucide-react";
 import { submitContactForm } from "@/app/actions/contact";
 
 const iconMap = {
@@ -141,7 +141,14 @@ export function Contact() {
                 disabled={isPending}
                 className="w-full rounded-full bg-black px-8 py-4 font-medium text-white transition-transform hover:scale-105 disabled:opacity-50 dark:bg-white dark:text-black"
               >
-                {isPending ? "Sending..." : "Send Message"}
+                {isPending ? (
+                  <span className="flex items-center justify-center gap-2">
+                    <Loader2Icon className="h-4 w-4 animate-spin" />
+                    Sending...
+                  </span>
+                ) : (
+                  "Send Message"
+                )}
               </button>
 
               {state?.success && (
