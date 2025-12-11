@@ -16,7 +16,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="text-center md:text-left">
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              © {currentYear} {personalInfo.name}. All rights reserved.
+              &copy; {currentYear} {personalInfo.name}. All rights reserved.
             </p>
           </div>
 
