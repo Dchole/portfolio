@@ -75,7 +75,7 @@ Server Action at `/app/actions/contact.ts` uses Resend for email delivery.
 Required in `.env.local`:
 
 ```env
-API_RESEND_KEY=re_e82SHJvK_8N9kQ6QvkVu5VUpvwaVco2pN
+API_RESEND_KEY=your_resend_api_key_here
 ```
 
 ## 📝 Making Updates

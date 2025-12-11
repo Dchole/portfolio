@@ -135,7 +135,7 @@ portfolio/
 `.env.local` configured with:
 
 ```env
-API_RESEND_KEY=re_e82SHJvK_8N9kQ6QvkVu5VUpvwaVco2pN
+API_RESEND_KEY=your_resend_api_key_here
 ```
 
 ## 🚀 How to Launch
