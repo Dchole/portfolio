@@ -24,9 +24,6 @@ export const metadata: Metadata = {
     "Web Development"
   ],
   authors: [{ name: "Derek Oware" }],
-  icons: {
-    icon: "/favicon.png"
-  },
   openGraph: {
     title: "Derek Oware | Senior Full-Stack Developer",
     description:
