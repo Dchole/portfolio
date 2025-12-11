@@ -151,7 +151,7 @@ export const experience: Experience[] = [
   {
     id: "2",
     company: "Dishplug",
-    position: "Co-Founder & COO",
+    position: "Co-Founder & CTO",
     location: "Ghana",
     startDate: "2022-10",
     endDate: "2024-04",
