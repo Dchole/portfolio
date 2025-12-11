@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -39,13 +40,18 @@ export function Navigation() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12">
           <a
             href="#"
-            className="text-xl font-bold tracking-tight"
+            className="relative h-10 w-10"
             onClick={e => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            DO
+            <Image
+              src="/favicon.png"
+              alt="Derek Oware"
+              fill
+              className="object-contain rounded-full"
+            />
           </a>
 
           {/* Desktop Navigation */}
