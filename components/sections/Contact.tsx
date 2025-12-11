@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useActionState, useEffect } from "react";
 import { Section, SectionTitle } from "@/components/Section";
 import { FadeIn } from "@/components/AnimationWrapper";
 import { personalInfo, socialLinks } from "@/data/portfolio";
-import { Github, Linkedin, Twitter, Loader2 } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
+import { submitContactForm } from "@/app/actions/contact";
 
 const iconMap = {
   github: Github,
@@ -12,37 +13,27 @@ const iconMap = {
   twitter: Twitter
 };
 
+type FormState = {
+  success: boolean;
+  message?: string;
+  error?: string;
+} | null;
+
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const [status, setStatus] = useState<
-    "idle" | "loading" | "success" | "error"
-  >("idle");
+  const [state, formAction, isPending] = useActionState<FormState, FormData>(
+    async (_prevState, formData) => {
+      return await submitContactForm(formData);
+    },
+    null
+  );
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("loading");
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
+  useEffect(() => {
+    if (state?.success) {
+      // Reset form on success
+      const form = document.getElementById("contact-form") as HTMLFormElement;
+      form?.reset();
     }
-  };
+  }, [state]);
 
   return (
     <Section id="contact" className="bg-neutral-50 dark:bg-neutral-900/30">
@@ -96,7 +87,7 @@ export function Contact() {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form id="contact-form" action={formAction} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
@@ -107,11 +98,8 @@ export function Contact() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   required
-                  value={formData.name}
-                  onChange={e =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
                   className="w-full rounded-lg border border-neutral-200 bg-white px-4 py-3 transition-colors focus:border-black focus:outline-none dark:border-neutral-800 dark:bg-neutral-900 dark:focus:border-white"
                 />
               </div>
@@ -126,11 +114,8 @@ export function Contact() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   required
-                  value={formData.email}
-                  onChange={e =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
                   className="w-full rounded-lg border border-neutral-200 bg-white px-4 py-3 transition-colors focus:border-black focus:outline-none dark:border-neutral-800 dark:bg-neutral-900 dark:focus:border-white"
                 />
               </div>
@@ -144,39 +129,29 @@ export function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   required
                   rows={5}
-                  value={formData.message}
-                  onChange={e =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
                   className="w-full rounded-lg border border-neutral-200 bg-white px-4 py-3 transition-colors focus:border-black focus:outline-none dark:border-neutral-800 dark:bg-neutral-900 dark:focus:border-white"
                 />
               </div>
 
               <button
                 type="submit"
-                disabled={status === "loading"}
+                disabled={isPending}
                 className="w-full rounded-full bg-black px-8 py-4 font-medium text-white transition-transform hover:scale-105 disabled:opacity-50 dark:bg-white dark:text-black"
               >
-                {status === "loading" ? (
-                  <span className="flex items-center justify-center gap-2">
-                    <Loader2 className="h-4 w-4 animate-spin" />
-                    Sending...
-                  </span>
-                ) : (
-                  "Send Message"
-                )}
+                {isPending ? "Sending..." : "Send Message"}
               </button>
 
-              {status === "success" && (
+              {state?.success && (
                 <p className="text-center text-sm text-green-600 dark:text-green-400">
-                  Message sent successfully! I&apos;ll get back to you soon.
+                  {state.message}
                 </p>
               )}
-              {status === "error" && (
+              {state?.error && (
                 <p className="text-center text-sm text-red-600 dark:text-red-400">
-                  Something went wrong. Please try again or email me directly.
+                  {state.error}
                 </p>
               )}
             </form>
