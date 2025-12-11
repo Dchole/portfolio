@@ -30,6 +30,7 @@ export const skills: Skill[] = [
       "Node.js",
       "Express",
       "RESTful APIs",
+      "tRPC",
       "GraphQL",
       "PostgreSQL",
       "MongoDB",
@@ -204,17 +205,17 @@ export const experience: Experience[] = [
 export const socialLinks: SocialLink[] = [
   {
     name: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://github.com/Dchole",
     icon: "github"
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://www.linkedin.com/in/derek-oware-5075981a2/",
     icon: "linkedin"
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/yourusername",
+    url: "https://x.com/DerekOware2",
     icon: "twitter"
   }
 ];
