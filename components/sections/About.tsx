@@ -16,9 +16,19 @@ export function About() {
               {personalInfo.bio}
             </p>
             <p className="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
-              When I&apos;m not coding, you&apos;ll find me exploring new
-              technologies, contributing to open source, or sharing knowledge
-              through technical writing and mentoring.
+              With 5 years of experience, I&apos;ve built diverse applications
+              from AI-powered SaaS products to marketplace platforms. My
+              experience spans agency work with 10+ client projects, co-founding
+              a food delivery startup, and freelance automation systems. I love
+              planning solutions thoroughly before writing code, ensuring both
+              clean architecture and exceptional user experiences.
+            </p>
+            <p className="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Beyond web development, I&apos;m exploring game development with
+              Unreal Engine and UEFN. I&apos;m constantly experimenting with new
+              technologies, building side projects, and diving deep into AI
+              integration and system design. I learn by reading documentation
+              first, then building hands-on demos to master new concepts.
             </p>
             <div className="flex flex-wrap gap-6 pt-4">
               <div>

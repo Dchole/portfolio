@@ -6,7 +6,7 @@ export const personalInfo = {
   tagline: "Building elegant solutions with modern web technologies",
   email: "derekoware47@gmail.com",
   location: "Takoradi, Ghana",
-  bio: "I'm a senior full-stack developer with 8+ years of experience specializing in React, Next.js, and Node.js. I'm passionate about creating performant, accessible web applications that solve real-world problems. My focus is on frontend architecture, but I bring full-stack expertise to every project.",
+  bio: "I'm a senior full-stack developer known for solving complex technical challenges that others can't crack, even in unfamiliar languages or frameworks. Whether it's web scraping and video processing, intelligent scheduling algorithms, or real-time systems, I thrive on problems that require deep thinking and thoughtful architecture.",
   avatar: "/avatar.jpg" // Add your image to public folder
 };
 
