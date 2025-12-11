@@ -1,6 +1,6 @@
-# Portfolio Website
+# Derek Oware - Portfolio Website
 
-A modern, minimalist portfolio website for a Senior Full-Stack Developer built with Next.js 16, TypeScript, and Tailwind CSS 4.
+A modern, minimalist portfolio website built with Next.js 16, TypeScript, and Tailwind CSS 4. Showcasing 5 years of experience as a Senior Full-Stack Developer specializing in complex problem-solving and elegant solutions.
 
 ## 🚀 Features
 
@@ -9,8 +9,9 @@ A modern, minimalist portfolio website for a Senior Full-Stack Developer built w
 - 🎨 Minimalist UI with dark mode support
 - ⚡ Optimized performance
 - 🔍 SEO-friendly
-- 📧 Contact form with API route
-- 🎯 Section-based navigation
+- 📧 Contact form with Resend email integration
+- 🎯 Section-based smooth scroll navigation
+- 🖼️ Optimized image loading with blur placeholders
 
 ## 📋 Sections
 
@@ -51,38 +52,30 @@ Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
 ## ✏️ Customization Guide
 
-### 1. Update Personal Information
+### 1. Personal Information
 
-Edit `/data/portfolio.ts` to add your information:
+All content is managed in `/data/portfolio.ts`:
 
-- **personalInfo:** Name, title, bio, email, location
-- **skills:** Your tech stack organized by category
-- **projects:** Your featured projects (3 recommended)
-- **experience:** Work history
-- **socialLinks:** GitHub, LinkedIn, Twitter URLs
+- **personalInfo:** Derek Oware's details
+- **skills:** Tech stack (Frontend, Backend, Tools)
+- **projects:** 3 featured projects (Adcraft, Brilla, Handymen)
+- **experience:** Welite, Dishplug, Freelance work
+- **socialLinks:** Social media profiles
 
-### 2. Add Images
+### 2. Images
 
-Place your images in the `/public` folder:
+Images are located in `/public`:
 
-- `/public/avatar.jpg` - Your profile photo
-- `/public/projects/[project-name].jpg` - Project screenshots
+- `/public/avatar.webp` - Profile photo with blur placeholder
+- `/public/projects/` - Project screenshots (Adcraft, Brilla, Handymen)
 
 ### 3. Update Metadata
 
 Edit `/app/layout.tsx` to update SEO information.
 
-### 4. Contact Form Integration
+### 4. Contact Form
 
-The contact form is set up but needs an email service. Options:
-
-**Option A: Resend (Recommended)**
-
-```bash
-npm install resend
-```
-
-Update `/app/api/contact/route.ts` and add `RESEND_API_KEY` to `.env.local`
+The contact form uses Next.js Server Actions with Resend for email delivery. Already configured and working!
 
 ### 5. Navigation
 
@@ -93,7 +86,8 @@ Update navigation items in `/components/Navigation.tsx` if you add/remove sectio
 ```
 portfolio/
 ├── app/
-│   ├── api/contact/          # Contact form API route
+│   ├── actions/
+│   │   └── contact.ts        # Server action for contact form
 │   ├── globals.css           # Global styles
 │   ├── layout.tsx            # Root layout with metadata
 │   └── page.tsx              # Main page
@@ -122,16 +116,16 @@ portfolio/
 3. Import your repository
 4. Deploy!
 
-## 📝 Content Checklist
+## 📝 Deployment Status
 
-Before going live, update:
+✅ **Production Ready** - Deployed to Vercel
 
-- [ ] Personal information in `/data/portfolio.ts`
-- [ ] Profile photo at `/public/avatar.jpg`
-- [ ] Project screenshots in `/public/projects/`
-- [ ] Social media links
-- [ ] Email configuration
-- [ ] SEO metadata in `/app/layout.tsx`
+- ✅ Personal information updated
+- ✅ Profile photo added (`avatar.webp`)
+- ✅ Project screenshots added
+- ✅ Social media links configured
+- ✅ Resend email integration active
+- ✅ SEO metadata configured
 
 ## 🎨 Design Philosophy
 
@@ -143,6 +137,14 @@ Minimalist design approach:
 - Subtle animations
 - Professional black/white color scheme
 
+## 🔧 Environment Variables
+
+Create `.env.local` with:
+
+```
+API_RESEND_KEY=your_resend_api_key
+```
+
 ---
 
-Built with ❤️ using Next.js and Tailwind CSS
+Built by Derek Oware with Next.js, TypeScript, and Tailwind CSS
