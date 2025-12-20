@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { personalInfo } from "@/data/portfolio";
 
 export function Hero() {
@@ -43,6 +43,14 @@ export function Hero() {
             className="rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition-transform hover:scale-105 dark:bg-white dark:text-black"
           >
             View My Work
+          </a>
+          <a
+            href="/Derek_Oware_Resume.pdf"
+            download
+            className="inline-flex items-center gap-2 rounded-full border-2 border-black px-8 py-4 text-sm font-medium transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
+          >
+            <Download className="h-4 w-4" />
+            Download Resume
           </a>
           <a
             href="#contact"
