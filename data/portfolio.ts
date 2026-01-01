@@ -127,7 +127,9 @@ export const experience: Experience[] = [
     endDate: null,
     description: [
       "Built 10+ client projects from scratch across e-commerce, SaaS, dashboards, and tracking systems under NDA",
-      "Served as technical lead for complex problem-solving across projects, performing code reviews and architecture decisions",
+      "Implemented comprehensive testing strategies using Jest for unit/integration tests and Playwright for end-to-end testing",
+      "Conducted thorough code reviews to maintain code quality standards, ensuring best practices and architectural consistency",
+      "Served as technical lead for complex problem-solving across projects, making critical architecture decisions",
       "Led major optimization initiatives on legacy codebases, reducing load times and improving performance metrics",
       "Migrated large JavaScript codebases to TypeScript, improving code quality and maintainability",
       "Mentored new developers during onboarding and collaborated on completing critical project deliverables"
