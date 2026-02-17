@@ -2,12 +2,17 @@
 
 **Senior Full-Stack Developer**
 
-oware.me <br/>
-derekoware47@gmail.com <br/>
-linkedin.com/in/derek-oware-5075981a2 <br/>
-Takoradi, Ghana <br/>
-github.com/Dchole <br/>
-x.com/@DerekOware2 <br/>
+Website: oware.me <br/>
+
+Email: derekoware47@gmail.com <br/>
+
+LinkedIn: linkedin.com/in/derek-oware-5075981a2 <br/>
+
+Location: Takoradi, Ghana <br/>
+
+GitHub: github.com/Dchole <br/>
+
+Twitter: @DerekOware2 <br/>
 
 ---
 
