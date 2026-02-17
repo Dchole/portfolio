@@ -45,7 +45,7 @@ export function Hero() {
             View My Work
           </a>
           <a
-            href="/Derek_Oware_Resume.pdf"
+            href="/RESUME.pdf"
             download
             className="inline-flex items-center gap-2 rounded-full border-2 border-black px-8 py-4 text-sm font-medium transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
           >
